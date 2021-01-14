@@ -1,50 +1,116 @@
 <!doctype HTML>
 <html lang="pt">
-    <head>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-    </head>
 
-    <body>
+<head>
+    <title>Calculo de um juro</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="projeto.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js">
+    </script>
+</head>
+
+<body>
+    <button class="c1" style="float: left;" onclick="aparecer2()"> Home </button>
+    <button class="c1" style="float: left;" onclick="aparecer()"> Calculadora </button>
+    <button class="c1" style="float: left;"> Sobre Nós </button>
+    <button class="c1" style="float: left;"> Guião </button>
+    <br> <br> <br>
+
+    <div class="a0" style="display: block;">
+        <h1>O que é um juro simples e um juro composto?</h1>
+        <h2>Juro simples</h2>
+        <ul>
+            <li>O juro simples corresponde ao dinheiro obtido de um deposito em que um sujeito faz sobre uma determinada
+                taxa e um determinado tempo</li>
+            <li>Este juro simples é um valor fixo pois não existe um acrescimo ao montante e devido a taxa se manter
+                constante</li>
+        </ul>
+        <h2>Juro composto</h2>
+        <ul>
+            <li>O juro composto corresponde tambem ao dinheiro obtido de um deposito em que um sujeito faz sobre uma
+                determinada taxa e um determinado tempo</li>
+            <li>A grande diferença deste juro para um simples é o facto de se adicionar uma mensalidade ao deposito, o
+                que provoca uma mudança substancial a longo prazo
+                do valor obtido, deixando assim de ser uma constante e passar a ser uma parabola.
+            </li>
+        </ul>
+        <h1>Vantagens/beneficios do juro composto</h1>
+        <ul>
+            <li>Uma das vantagens mais apreciadas por aqueles que investem é o rendimento a longo prazo, pois vai chegar
+                um dia em que o valor obtido fica grande o suficiente
+                para fazer uma pessoa deixar de trabalhar e viver dos seus lucros.
+            </li>
+            <li>Outra vantagem do juro é o facto de não termos de procurar as pessoas que querem dinheiro, em vez disso
+                são as impresas que as procuram assim no final, o valor obtido
+                é igual ao valor de um juro sobre um juro.(As empresas fazem juros as pessoas que precisam de dinheiro,
+                e os investidores fazem juros a essas empresas. assim
+                resulta de um juro sobre outro juro).
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="a1" style="display: none;">
         <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
 
-        <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
+    <script>
+        function aparecer() {
+            document.getElementsByClassName("a1")[0].style.display = "block";
+            document.getElementsByClassName("a0")[0].style.display = "none";
+        }
+        function aparecer2() {
+            document.getElementsByClassName("a1")[0].style.display = "none";
+            document.getElementsByClassName("a0")[0].style.display = "block";
+        }
+
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myLineChart = new Chart(ctx, {
+        type: 'line',
+    
+
+        
+            data: {
+                labels: ['Capitolio', 'Mensalidade', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# juros',
+                    data: [2, 9, 13, 45, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
                     }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    }
                 }
-            });
-            </script>
-    </body>
+            }
+        });
+    </script>
+</body>
+
 </html>
