@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <button class="c1" style="float: left;" onclick="aparecer2()"> Home </button>
-    <button class="c1" style="float: left;" onclick="aparecer()"> Calculadora </button>
+    <button class="c1" style="float: left;" onclick="aparecer(2)"> Home </button>
+    <button class="c1" style="float: left;" onclick="aparecer(1)"> Calculadora </button>
     <button class="c1" style="float: left;"> Sobre Nós </button>
     <button class="c1" style="float: left;"> Guião </button>
     <br> <br> <br>
@@ -59,15 +59,25 @@
     </div>
 
     <script>
-        function aparecer() {
-            document.getElementsByClassName("a1")[0].style.display = "block";
-            document.getElementsByClassName("a0")[0].style.display = "none";
-        }
-        function aparecer2() {
-            document.getElementsByClassName("a1")[0].style.display = "none";
+        function aparecer(x) {
+            switch (x) {
+                case 2:
+                document.getElementsByClassName("a1")[0].style.display = "none";
             document.getElementsByClassName("a0")[0].style.display = "block";
+                    break;
+                case 3:
+                    
+                    break;
+                case 4: 
+                     
+                    break;
+            
+                default:
+                document.getElementsByClassName("a1")[0].style.display = "block";
+            document.getElementsByClassName("a0")[0].style.display = "none";
+                    break;
+            }
         }
-
     </script>
 
     <script>
