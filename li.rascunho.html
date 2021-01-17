@@ -1,4 +1,4 @@
-folha de rascunho para o trabalho final
+<!-- folha de rascunho para o trabalho final -->
 
 
 <!doctype HTML>
@@ -12,7 +12,7 @@ folha de rascunho para o trabalho final
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="java.joao.js"></script>
     <script src="java.pedro.js"></script>
-
+    <script src="simao.js"></script>
 
 
 
@@ -25,8 +25,8 @@ folha de rascunho para o trabalho final
 <body>
     <button class="c1" style="float: left;" onclick="aparecer(2)"> Home </button>
     <button class="c1" style="float: left;" onclick="aparecer(1)"> Calculadora </button>
-    <button class="c1" style="float: left;"> Sobre Nós </button>
-    <button class="c1" style="float: left;"> Guião </button>
+    <button class="c1" style="float: left;" onclick="aparecer(3)"> Sobre Nós </button>
+    <button class="c1" style="float: left;" onclick="aparecer(4)"> Guião </button>
     <br> <br> <br>
 
     <div class="a0" style="display: block;">
@@ -64,7 +64,13 @@ folha de rascunho para o trabalho final
 
 
 
- Area do simão
+ <!-- Area do simão -->
+    <div class="a2" style="display: none;">
+         sobre nos
+    </div>
+    <div class="a3" style="display: none;">
+         guiao
+    </div>
 
 
 
@@ -155,52 +161,24 @@ folha de rascunho para o trabalho final
 
 
 
-
-
-
-
-
-
-
-   
-   
-   
-   
-   
-   
    <div class="a1" style="display: none;">
-   <p class="d2">Valor inicial:</p><input type="text" class="d1">
-   <p class="d2">mensalidade:</p><input type="text" class="d1">
+   Valor final <input id="valor1" type="text" onchange="valorfinal1()"> taxa por mes <input id="taxa1" type="text" onchange="taxa1()"> anos <input id="ano1" type="text" onchange="ano1()"> Valor inicial          <br>
+   Valor final <input id="valor2" type="text"> taxa por mes <input id="taxa2" type="text"> anos <input id="ano2" type="text"> mensalidade <input id="mens2" type="text"> Valor inicial   
+   
+   
+   
+   
+   
+    <p class="d2">Valor inicial:</p><input type="text" class="d1">
+   <p class="d2">mensalidade:</p><input type="text" class="d1" mask="valor">
    <p class="d2">taxa por meses:</p><input type="text" class="d1">
    <p class="d2">tempo em meses:</p><input type="text" class="d1">
 
-   
-   
-   
+  
     <canvas id="myChart" width="400" height="400"></canvas>
     </div>
 
-    <script>
-     function aparecer(x) {
-            switch (x) {
-                case 2:
-                document.getElementsByClassName("a1")[0].style.display = "none";
-            document.getElementsByClassName("a0")[0].style.display = "block";
-                    break;
-                case 3:
-                    
-                    break;
-                case 4: 
-                     
-                    break;
-            
-                default:
-                document.getElementsByClassName("a1")[0].style.display = "block";
-            document.getElementsByClassName("a0")[0].style.display = "none";
-                    break;
-            }
-     }    
-    </script>
+
 
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
@@ -244,7 +222,7 @@ folha de rascunho para o trabalho final
             }
         });
     </script>
-    Area para o joão 
+    <!--Area para o joão -->
 
 
 
@@ -269,7 +247,7 @@ folha de rascunho para o trabalho final
 
 
 
-Area do pedro
+<!-- Area do pedro -->
 
 
 
@@ -297,7 +275,7 @@ Area do pedro
 
 
 
-Area da serena
+<!-- Area da serena -->
 
 
 
@@ -322,9 +300,9 @@ Area da serena
 
 
 
-
-
-
+<script src="java.joao.js"></script>
+<script src="java.pedro.js"></script>
+<script src="simao.js"></script>
 </body>
 
 </html>
