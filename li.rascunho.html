@@ -13,12 +13,13 @@
     <script src="java.joao.js"></script>
     <script src="java.pedro.js"></script>
     <script src="simao.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-
-
-
-
+    <script type="text/javascript" src="jquery.maskMoney3.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript">	google.load('visualization', '1', { packages: ['corechart'] });</script>
     
 </head>
 
@@ -175,7 +176,74 @@
    <p class="d2">tempo em meses:</p><input type="text" class="d1">
 
   
-    <canvas id="myChart" width="400" height="400"></canvas>
+   <div id="wrapper" class="">
+    <div id="main" class="clearfix " style="">
+        <div class="fusion-row" style="">
+            <div id="content" style="float: left;">
+                <div id="post-4611" class="post-4611 page type-page status-publish hentry">
+                   <div style="float: center;">
+                       <h1>Calculadora e Gráfico</h1>
+                   </div>
+                    <div style="border: 5px solid black;"> 
+                    <table width="94%" border="0" cellpadding="2" cellspacing="0">
+                        <tbody>
+                            <tr class="ajudaHover">
+                                <td align="right" width="171"><strong>Investimento inicial:</strong>&nbsp;</td>
+                                <td width="106" colspan="2"><input type="text" id="txtValorInicial" class="euro"
+                                        value="0,00 €" style="width: 130px;"></td>
+                            </tr>
+                            <tr class="ajudaHover">
+                                <td align="right"><strong>Investimento por mês:</strong>&nbsp;</td>
+                                <td colspan="2"><input type="text" id="txtValorPeriodo" class="euro" value="0,00 €"
+                                        style="width: 130px;"></td>
+                            </tr>
+                            <tr class="ajudaHover">
+                                <td align="right"><strong>Taxa de juro mensal:</strong>&nbsp;</td>
+                                <td colspan="2"><input type="text" id="txtPct" class="pct" value="0,0"
+                                        style="width: 70px;">
+                                    &nbsp;<strong>%</strong></td>
+                            </tr>
+                            <tr class="ajudaHover">
+                                <td align="right"><strong>Por quanto tempo quer investir:</strong>&nbsp;</td>
+                                <td><input type="text" id="txtPeriodo" class="periodo" value="0"
+                                        style="width: 70px;"></td>
+                                <td><select name="sctPeriodo" id="sctPeriodo">
+                                        <option value="meses">meses</option>
+                                        <option value="anos" selected>anos</option>
+                                    </select></td>
+                                <td valign="top">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="right">&nbsp;</td>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Total investido:&nbsp;</td>
+                                <td colspan="3" style="color: green;font-weight: bold;"><span 
+                                        id="spanTotalInvestidoComposto"></span> €</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Total ganho em juros:&nbsp;</td>
+                                <td colspan="3" style="color: green;font-weight: bold;"><span 
+                                        id="spanTotalJurosComposto"></span> €</td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding-top: 8px;padding-bottom: 5px;">Total:&nbsp;</td>
+                                <td colspan="3" style="padding-top: 8px;padding-bottom: 5px; color: green;font-weight: bold;font-size: 16px;" ><span                                           
+                                        id="spanTotalComposto"></span> €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   </div>
+                    <div>
+                        <div id="visualization" style="max-width: 680px; height: 300px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 
 

@@ -22,3 +22,12 @@
 .d2{
     width: 200px;
 }
+
+body {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+}
