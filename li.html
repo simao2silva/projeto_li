@@ -1,53 +1,51 @@
 <!doctype HTML>
 <html lang="pt">
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e5c24ebf98eb5510f116370056e10229b989c3af
 <head>
     <title>Calculo de um juro</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="projeto.css">
-<<<<<<< HEAD
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="java.joao.js"></script>
-    <script src="java.pedro.js"></script>
-=======
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js">
+    <script src="simao.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="jquery.maskMoney3.js"></script>
+    <script src="functions.js"></script>
+    <script>	
+    google.load('visualization', '1', { packages: ['corechart'] });
     </script>
-        <script src="java.joao.js"></script>
-        <script src="java.pedro.js"></script>
->>>>>>> e5c24ebf98eb5510f116370056e10229b989c3af
+
 </head>
 
 <body>
-    <button class="c1" style="float: left;" onclick="aparecer(2)"> Home </button>
-    <button class="c1" style="float: left;" onclick="aparecer(1)"> Calculadora </button>
-    <button class="c1" style="float: left;"> Sobre Nós </button>
-    <button class="c1" style="float: left;"> Guião </button>
+    
+        <button class="c1 q1 q2" style="float: left;" onclick="aparecer(2)"> Home </button>
+        <button class="c1 q1 q2" style="float: left;" onclick="aparecer(1)"> Calculadora </button>
+        <button class="c1 q1 q2" style="float: left;" onclick="aparecer(3)"> Sobre Nós </button>
+        <button class="c1 q1 q2" style="float: left;" onclick="aparecer(4)"> Guião/Help </button>
+    
     <br> <br> <br>
 
     <div class="a0" style="display: block;">
         <h1>O que é um juro simples e um juro composto?</h1>
         <h2>Juro simples</h2>
         <ul>
-            <li>O juro simples corresponde ao dinheiro obtido de um deposito em que um sujeito faz sobre uma determinada
-                taxa e um determinado tempo</li>
-            <li>Este juro simples é um valor fixo pois não existe um acrescimo ao montante e devido a taxa se manter
-                constante</li>
+            <li>O juro simples corresponde ao dinheiro obtido de um depósito em que um sujeito faz sobre uma determinada
+                taxa e um determinado tempo;</li>
+            <li>Este juro simples é um valor fixo pois não existe um acréscimo ao montante e devido à taxa se manter
+                constante.</li>
         </ul>
         <h2>Juro composto</h2>
         <ul>
-            <li>O juro composto corresponde tambem ao dinheiro obtido de um deposito em que um sujeito faz sobre uma
-                determinada taxa e um determinado tempo</li>
-            <li>A grande diferença deste juro para um simples é o facto de se adicionar uma mensalidade ao deposito, o
+            <li>O juro composto corresponde também ao dinheiro obtido de um depósito em que um sujeito faz sobre uma
+                determinada taxa e um determinado tempo;</li>
+            <li>A grande diferença deste juro para um simples é o facto de se adicionar uma mensalidade ao depósito, o
                 que provoca uma mudança substancial a longo prazo
-                do valor obtido, deixando assim de ser uma constante e passar a ser uma parabola.
+                do valor obtido, deixando assim de ser uma constante e passar a ser uma parábola.
             </li>
         </ul>
-        <h1>Vantagens/beneficios do juro composto</h1>
+        <h1>Vantagens/benefícios do juro composto</h1>
         <ul>
             <li>Uma das vantagens mais apreciadas por aqueles que investem é o rendimento a longo prazo, pois vai chegar
                 um dia em que o valor obtido fica grande o suficiente
@@ -55,92 +53,130 @@
             </li>
             <li>Outra vantagem do juro é o facto de não termos de procurar as pessoas que querem dinheiro, em vez disso
                 são as impresas que as procuram assim no final, o valor obtido
-                é igual ao valor de um juro sobre um juro.(As empresas fazem juros as pessoas que precisam de dinheiro,
-                e os investidores fazem juros a essas empresas. assim
+                é igual ao valor de um juro sobre um juro.(As empresas fazem juros às pessoas que precisam de dinheiro,
+                e os investidores fazem juros a essas empresas. Assim
                 resulta de um juro sobre outro juro).
             </li>
         </ul>
     </div>
 
-
-
-
-    <div class="a1" style="display: none;">
-        <canvas id="myChart" width="400" height="400"></canvas>
+    <div class="a2" style="display: none;">
+         <h2 class="g1">Sobre nós</h2>
+         <p class="g2">Somos um grupo de estudantes constituídos por quatro elementos da Escola Superior de Tecnologia e Gestão de Águeda (ESTGA), e foi nos propostos a elaboração de um projeto: uma aplicação para calcular os de Juros Compostos.</p>
+         <h2 class="g1">O Desenvolvimento da Aplicação</h2>
+         <p class="g2">Primeiro começámos por fazer pesquisas sobre Juros Compostos e Juros Simples, para entender melhor o que nos foi proposto.</p> 
+         <p class="g2">Segundo fomos trabalhar nos requesitos da aplicação a desenvolver, tanto requisitos funcionais como requisitos não funcionais.</p> 
+         <p class="g2">Em terceiro lugar fomos criar a nossa aplicação em formato de desenho, estruturamos a aplicação de modo a que quando fôssemos para o HTML, CSS e JavaScript a elaboração fosse mais fácil.</p>
+         <p class="g2">Em último lugar, partimos para o desenvolvimento da aplicação dividindo as tarefas por cada elemento do grupo. Cada elemento ficou encarregue de desenvolver uma parte da aplicação, onde no fim juntámos tudo.</p>
+         <h2 class="g1">Grupo</h2>
+         <ul>
+             <li>Simão Silva   - Nº Mecanográfico: 102914</li>
+             <li>João Marques  - Nº Mecanográfico: 104009</li>
+             <li>Pedro Gil     - Nº Mecanográfico: 104326</li>
+             <li>Guyvânia Rosa - Nº Mecanográfico: 101515</li>
+         </ul>
+    </div>
+    <div class="a3" style="display: none;">
+       <h2> Vamos por esta calculadora a funcionar em 3 passos: </h2>
+       <ol>
+          <li>Clicar no botão com o nome calculadora;</li>
+          <li>Inserir os valores na tabela apresentada;</li>
+          <li>Aguarde ate aparecer a o grafico.</li> 
+       </ol>
+       <h2>Aviso: Valores demasiado elevados, fazem com que a calculadora fique lenta.</h2>
+       <h2>Em caso de erro </h2>
+       <ol>
+           <li>Fazer refresh da página ou clicar na tecla F5; </li>
+           <li>Caso o passo 1 não resulte deverá fechar o separador e voltar a abrir.</li>
+       </ol>
     </div>
 
-    <script>
-<<<<<<< HEAD
-     function aparecer(x) {
-=======
-        function aparecer(x) {
->>>>>>> e5c24ebf98eb5510f116370056e10229b989c3af
-            switch (x) {
-                case 2:
-                document.getElementsByClassName("a1")[0].style.display = "none";
-            document.getElementsByClassName("a0")[0].style.display = "block";
-                    break;
-                case 3:
-                    
-                    break;
-                case 4: 
-                     
-                    break;
-            
-                default:
-                document.getElementsByClassName("a1")[0].style.display = "block";
-            document.getElementsByClassName("a0")[0].style.display = "none";
-                    break;
-            }
-<<<<<<< HEAD
-     }    
-=======
-        }
->>>>>>> e5c24ebf98eb5510f116370056e10229b989c3af
-    </script>
+    <div class="a1" style="display: none;">
+        <div class="fundo">
 
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myLineChart = new Chart(ctx, {
-        type: 'line',
-    
+            <span>Valor final</span> <input id="valor1" type="text" onchange="valorfinal1()"><span> taxa por mes</span> <input id="taxa1" type="text" onchange="taxa1()"> <span>anos</span> <input id="ano1" type="text" onchange="ano1()"><span> Valor inicial</span> <br>
+            <span>Valor final</span> <input id="valor2" type="text"><span> taxa por mes </span><input id="taxa2" type="text"><span> anos </span> <input id="ano2" type="text"><span> mensalidade</span><input id="mens2" type="text"><span> Valor inicial </span>
 
-        
-            data: {
-                labels: ['Capitolio', 'Mensalidade', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# juros',
-                    data: [2, 9, 13, 45, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-    </script>
+            <div id="wrapper" class="">
+                <div id="main" class="clearfix">
+                    <div class="fusion-row" >
+                        <div id="content" style="float: left;">
+                            <div id="post-4611" class="post-4611 page type-page status-publish hentry">
+                                <div style="float: center;">
+                                    <h2>Calculadora e Gráfico</h2>
+                                </div>
+                                <div style="border: 5px solid black;">
+                                    <table width='94%' border='0' cellpadding="2" cellspacing="0">
+                                        <tbody>
+                                            <tr class="ajudaHover">
+                                                <td align='right' width="171"><strong>Investimento
+                                                        inicial:</strong>&nbsp;
+                                                </td>
+                                                <td width="106" colspan="2"><input type="text" id="txtValorInicial"
+                                                        class="euro" value="0,00 €" style="width: 130px;"></td>
+                                            </tr>
+                                            <tr class="ajudaHover">
+                                                <td align="right"><strong>Investimento por mês:</strong>&nbsp;</td>
+                                                <td colspan="2"><input type="text" id="txtValorPeriodo" class="euro"
+                                                        value="0,00 €" style="width: 130px;"></td>
+                                            </tr>
+                                            <tr class="ajudaHover">
+                                                <td align="right"><strong>Taxa de juro mensal:</strong>&nbsp;</td>
+                                                <td colspan="2"><input type="text" id="txtPct" class="pct" value="0,0"
+                                                        style="width: 70px;">
+                                                    &nbsp;<strong>%</strong></td>
+                                            </tr>
+                                            <tr class="ajudaHover">
+                                                <td align="right"><strong>Por quanto tempo quer investir:</strong>&nbsp;
+                                                </td>
+                                                <td><input type="text" id="txtPeriodo" class="periodo" value="0"
+                                                        style="width: 70px;"></td>
+                                                <td><select name="sctPeriodo" id="sctPeriodo">
+                                                        <option value="meses">meses</option>
+                                                        <option value="anos" selected>anos</option>
+                                                    </select></td>
+                                                <td valign="top">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">&nbsp;</td>
+                                                <td colspan="3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">Total investido:&nbsp;</td>
+                                                <td colspan="3" style="color: green;font-weight: bold;"><span
+                                                        id="spanTotalInvestidoComposto"></span> €</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">Total ganho em juros:&nbsp;</td>
+                                                <td colspan="3" style="color: green;font-weight: bold;"><span
+                                                        id="spanTotalJurosComposto"></span> €</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" style="padding-top: 8px;padding-bottom: 5px;">
+                                                    Total:&nbsp;</td>
+                                                <td colspan="3"
+                                                    style="padding-top: 8px;padding-bottom: 5px; color: green;font-weight: bold;font-size: 16px;">
+                                                    <span id="spanTotalComposto"></span> €
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div>
+                                    <div id="visualization" style="max-width: 680px; height: 300px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="java.joao.js"></script>
+    <script src="simao.js"></script>
 </body>
 
 </html>
