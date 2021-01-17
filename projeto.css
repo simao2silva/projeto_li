@@ -64,4 +64,5 @@ input {
 .q2:active{
     position: relative;
     top: 5px;
-    box-shadow:none;
+    box-shadow: none;
+}
