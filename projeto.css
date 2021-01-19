@@ -75,3 +75,51 @@ input {
 .g3{
     padding-left: 20px;
 }
+.l1{
+    text-align: right;
+}
+.l2{
+    text-align: right;
+    width: 171;
+}
+.l3{
+    float: center;
+}
+.l4{
+    width: 106px;
+}
+.l5{
+    padding-top: 8px;
+    padding-bottom: 5px;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+.l6{
+    max-width: 680px;
+    height: 300px;
+}
+.l7{
+    width: 130px;
+}
+.l8{
+    width: 70px;
+}
+.l9{
+    color: green;
+    font-weight: bold;
+}
+.l10{
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.l11{
+    width: 94%;
+    border: none;
+}
+.l12{
+    border: 5px solid black
+}
+.l13{
+    background-color: salmon;
+}

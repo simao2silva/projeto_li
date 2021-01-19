@@ -30,18 +30,16 @@ function aparecer(x) {
            }
     }    
 
-    var x;
-    function valorfinal1(){
-        x=document.getElementById("valor1").value;
-        console.log(x);  
+    function calc(){
+    var num = parseFloat(document.getElementById('inicial1').value);
+    var taxa = document.getElementById('taxa1').value;
+    var anos = document.getElementById('ano1').value;
+    var final = document.getElementById('valor1').value;
+    var check = isNaN(num);
+    if (anos != "" && taxa != "" && final !="" && check != true){
+        var num = (final / Math.pow (anos * (taxa / 100)));
+        document.getElementById("resultado1").value = num + "€";
+    } else {
+        document.getElementById("resultado1").value = "";
     }
-    var t;
-    function ano1(){
-        t=document.getElementById("ano1").value;
-        console.log(t);  
-    }
-    var y;
-    function taxa1(){
-        y=document.getElementById("taxa1").value;
-        console.log(y);  
     }

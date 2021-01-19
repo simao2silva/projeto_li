@@ -28,21 +28,12 @@
     <br> <br> <br>
 
     <div class="a0" style="display: block;">
-        <h1 class="g3">O que é um juro simples e um juro composto?</h1>
-        <h2 class="g3">Juro simples</h2>
+        <h1 class="g3">O que é um juro composto?</h1>
         <ul>
-            <li>O juro simples corresponde ao dinheiro obtido de um depósito em que um sujeito faz sobre uma determinada
-                taxa e um determinado tempo;</li>
-            <li>Este juro simples é um valor fixo pois não existe um acréscimo ao montante e devido à taxa se manter
-                constante.</li>
-        </ul>
-        <h2 class="g3">Juro composto</h2>
-        <ul>
-            <li>O juro composto corresponde também ao dinheiro obtido de um depósito em que um sujeito faz sobre uma
+            <li>O juro composto corresponde ao dinheiro obtido de um depósito em que um sujeito faz sobre uma
                 determinada taxa e um determinado tempo;</li>
-            <li>A grande diferença deste juro para um simples é o facto de se adicionar uma mensalidade ao depósito, o
-                que provoca uma mudança substancial a longo prazo
-                do valor obtido, deixando assim de ser uma constante e passar a ser uma parábola.
+            <li> o facto de se adicionar uma mensalidade ao depósito provoca uma mudança substancial a longo prazo
+                do valor obtido.
             </li>
         </ul>
         <h1 class="g3">Vantagens/benefícios do juro composto</h1>
@@ -83,7 +74,7 @@
           <li>Inserir os valores na tabela apresentada;</li>
           <li>Aguarde ate aparecer a o grafico.</li> 
        </ol>
-       <h2 class="g3">Aviso: Valores demasiado elevados, fazem com que a calculadora fique lenta.</h2>
+       <h2 class="g3">Aviso: Valores demasiado elevados, fazem com que a calculadora fique lenta, para trocar o valor colocado deverá apagar o valor afixado e só depois colocar de novo.</h2>
        <h2 class="g3">Em caso de erro </h2>
        <ol>
            <li>Fazer refresh da página ou clicar na tecla F5; </li>
@@ -94,7 +85,7 @@
     <div class="a1" style="display: none;">
         <div class="fundo">
 
-            <span>Valor final</span> <input id="valor1" type="text" onchange="valorfinal1()"><span> taxa por mes</span> <input id="taxa1" type="text" onchange="taxa1()"> <span>anos</span> <input id="ano1" type="text" onchange="ano1()"><span> Valor inicial</span> <br>
+            <span>Valor final</span> <input id="valor1" type="text"><span> taxa por ano em %</span> <input id="taxa1" type="text"> <span>anos</span> <input id="ano1" type="text"><span> Valor inicial</span> <input id="inicial1" type="text" hidden onclick="calc()"> <br>
             <span>Valor final</span> <input id="valor2" type="text"><span> taxa por mes </span><input id="taxa2" type="text"><span> anos </span> <input id="ano2" type="text"><span> mensalidade</span><input id="mens2" type="text"><span> Valor inicial </span>
 
             <div id="wrapper" class="">
@@ -102,35 +93,33 @@
                     <div class="fusion-row" >
                         <div id="content" style="float: left;">
                             <div id="post-4611" class="post-4611 page type-page status-publish hentry">
-                                <div style="float: center;">
+                                <div class="l3">
                                     <h2>Calculadora e Gráfico</h2>
                                 </div>
-                                <div style="border: 5px solid black;">
-                                    <table width='94%' border='0' cellpadding="2" cellspacing="0">
+                                <div class="l12 l13">
+                                    <table class="l11" cellpadding='2' cellspacing="0">
                                         <tbody>
                                             <tr class="ajudaHover">
-                                                <td align='right' width="171"><strong>Investimento
+                                                <td class="l2"><strong>Investimento
                                                         inicial:</strong>&nbsp;
                                                 </td>
-                                                <td width="106" colspan="2"><input type="text" id="txtValorInicial"
-                                                        class="euro" value="0,00 €" style="width: 130px;"></td>
+                                                <td class="l4" colspan="2"><input type="text" id="txtValorInicial"
+                                                        class="euro l7" value="0,00 €"></td>
                                             </tr>
                                             <tr class="ajudaHover">
-                                                <td align="right"><strong>Investimento por mês:</strong>&nbsp;</td>
-                                                <td colspan="2"><input type="text" id="txtValorPeriodo" class="euro"
-                                                        value="0,00 €" style="width: 130px;"></td>
+                                                <td class="l1"><strong>Investimento por mês:</strong>&nbsp;</td>
+                                                <td colspan="2"><input type="text" id="txtValorPeriodo" class="euro l7"
+                                                        value="0,00 €"></td>
                                             </tr>
                                             <tr class="ajudaHover">
-                                                <td align="right"><strong>Taxa de juro mensal:</strong>&nbsp;</td>
-                                                <td colspan="2"><input type="text" id="txtPct" class="pct" value="0,0"
-                                                        style="width: 70px;">
+                                                <td class="l1"><strong>Taxa de juro mensal:</strong>&nbsp;</td>
+                                                <td colspan="2"><input type="text" id="txtPct" class="pct l8" value="0,0">
                                                     &nbsp;<strong>%</strong></td>
                                             </tr>
                                             <tr class="ajudaHover">
-                                                <td align="right"><strong>Por quanto tempo quer investir:</strong>&nbsp;
+                                                <td class="l1"><strong>Por quanto tempo quer investir:</strong>&nbsp;
                                                 </td>
-                                                <td><input type="text" id="txtPeriodo" class="periodo" value="0"
-                                                        style="width: 70px;"></td>
+                                                <td><input type="text" id="txtPeriodo" class="periodo l8" value="0"></td>
                                                 <td><select name="sctPeriodo" id="sctPeriodo">
                                                         <option value="meses">meses</option>
                                                         <option value="anos" selected>anos</option>
@@ -138,24 +127,23 @@
                                                 <td valign="top">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td align="right">&nbsp;</td>
+                                                <td class="l1">&nbsp;</td>
                                                 <td colspan="3">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td align="right">Total investido:&nbsp;</td>
-                                                <td colspan="3" style="color: green;font-weight: bold;"><span
+                                                <td class="l1">Total investido:&nbsp;</td>
+                                                <td colspan="3" class="l9"><span
                                                         id="spanTotalInvestidoComposto"></span> €</td>
                                             </tr>
                                             <tr>
-                                                <td align="right">Total ganho em juros:&nbsp;</td>
-                                                <td colspan="3" style="color: green;font-weight: bold;"><span
+                                                <td class="l1">Total ganho em juros:&nbsp;</td>
+                                                <td colspan="3" class="l9"><span
                                                         id="spanTotalJurosComposto"></span> €</td>
                                             </tr>
                                             <tr>
-                                                <td align="right" style="padding-top: 8px;padding-bottom: 5px;">
+                                                <td class="l1 l10">
                                                     Total:&nbsp;</td>
-                                                <td colspan="3"
-                                                    style="padding-top: 8px;padding-bottom: 5px; color: green;font-weight: bold;font-size: 16px;">
+                                                <td colspan="3" class="l5">
                                                     <span id="spanTotalComposto"></span> €
                                                 </td>
                                             </tr>
@@ -163,7 +151,7 @@
                                     </table>
                                 </div>
                                 <div>
-                                    <div id="visualization" style="max-width: 680px; height: 300px;">
+                                    <div id="visualization" class="l6">
                                     </div>
                                 </div>
                             </div>
