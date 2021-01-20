@@ -84,6 +84,7 @@ input {
 }
 .l3{
     float: center;
+    margin: 0px 50px;
 }
 .l4{
     width: 106px;
@@ -125,4 +126,5 @@ input {
 }
 .l14{
     float: left;
+    margin: 20px 450px ;
 }
