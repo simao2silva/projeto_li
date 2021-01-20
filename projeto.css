@@ -129,6 +129,30 @@ input {
 .l15{
     vertical-align: top;
 }
-.l16{
-    s
+.butao{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 700;
+    border:none;
+    margin: 0px 30px 0px 0px;
+    padding: 10px;
+}
+
+.butao-cor{
+    background: rgb(255, 38, 9);
+    color:#fff;
+    box-shadow:0 5px 0 rgb(235, 19, 12);
+
+}
+
+.butao-cor:hover{
+    background:  rgb(235, 19, 12);
+    color:#fff;
+    box-shadow:0 5px 0 rgb(155, 13, 8);
+}
+
+.butao-cor:active{
+    position: relative;
+    top: 5px;
+    box-shadow:none;
 }

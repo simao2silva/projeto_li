@@ -29,37 +29,6 @@ function aparecer(x) {
             break;
     }
 }
-
-function calc() {
-    //função de calculo do valor inicial do investimento sem reforço
-    var num = parseFloat(document.getElementById('valinvest').value);
-    var juro = document.getElementById('juro_1').value;
-    var valjuro = document.getElementById('valjuro_1').value;
-    var anos = document.getElementById('year_1').value;
-    var check = isNaN(num);
-    if (anos != "" && valjuros != "" && check != true) {
-        switch (juro) {
-            case "composto":
-                var valjuros = (num / Math.pow((1 + (valjuro / 100)), anos));
-                valjuros = parseFloat(valjuros.toFixed(2));
-                document.getElementById("resultado_1").value = valjuros + "€";
-                break;
-            case "simples":
-                var valjuros = num / (1 + ((valjuro / 100) * anos));
-                valjuros = parseFloat(valjuros.toFixed(2));
-                document.getElementById("resultado_1").value = valjuros + "€";
-                break;
-        }
-    } else {
-        document.getElementById("resultado_1").value = " ";
-    }
+function imprimir(){
+    window.print();
 }
-function apagartabela() {
-    var contar = document.getElementById("myTable").rows.length;
-    if (contar > 1) {
-        for (i = totalRowCount; i > 0; i--) {
-            document.getElementById("myTable").deleteRow(i);
-        }
-    }
-}
-
