@@ -84,6 +84,7 @@ input {
 }
 .l3{
     float: center;
+    margin: 0px 50px;
 }
 .l4{
     width: 106px;
@@ -121,7 +122,8 @@ input {
     border: 5px solid black
 }
 .l13{
-    background-color: salmon;
+    background-color: rgb(168, 160, 159);
+
 }
 .l14{
     float: left;
